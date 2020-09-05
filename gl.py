@@ -337,7 +337,7 @@ class Render(object):
         while True:
           self.triangle()
       except StopIteration:
-        print('Un modelo terminado.')
+        print('Modelo añadido')
 
 
   

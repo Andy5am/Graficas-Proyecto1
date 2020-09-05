@@ -39,7 +39,6 @@ def simple(render, **kwargs):
   # textura
   tx, ty = kwargs['texture_coords']
   tcolor = render.active_texture.get_color(tx, ty)
-  print(tcolor)
   # normales
   nA, nB, nC = kwargs['varying_normals']
 

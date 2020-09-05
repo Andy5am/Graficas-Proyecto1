@@ -33,7 +33,6 @@ class Obj(object):
           if line:
               try:
                   prefix, value = line.split(' ', 1)
-                  print(prefix)
               except:
                   prefix = ''
               if prefix == 'v':

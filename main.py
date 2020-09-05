@@ -7,14 +7,17 @@ r = Render(1300, 1077)
 r.light = V3(0, 1, 1)
 
 #Fondo
+print('Creando fondo')
 t = Texture('./textures/ciudad.bmp')
 r.buffer = t.pixels
 r.active_texture = t
 r.active_shader = shadow
 r.lookAt(V3(1, 0, 100), V3(0, 0, 0), V3(0, 1, 0))
 r.finish('scene.bmp')
+print('Fondo creado')
 
 #Carro
+print('Añadiendo carro')
 t = Texture('./textures/camaro.bmp')
 r.active_texture = t
 r.active_shader = shadow
@@ -24,6 +27,7 @@ r.draw_arrays('TRIANGLES')
 r.finish('scene.bmp')
 
 #Ovni
+print('Añadiendo ovni')
 t = Texture('./textures/binary.bmp')
 r.active_texture = t
 r.active_shader = shadow
@@ -33,6 +37,7 @@ r.draw_arrays('TRIANGLES')
 r.finish('scene.bmp')
 
 #Gato
+print('Añadiendo gato')
 t = Texture('./textures/cat.bmp')
 r.active_texture = t
 r.active_shader = shadow
@@ -42,6 +47,7 @@ r.draw_arrays('TRIANGLES')
 r.finish('scene.bmp')
 
 #Avion
+print('Añadiendo avion')
 t = Texture('./textures/Albedo.bmp')
 r.active_texture = t
 r.active_shader = simple
@@ -51,6 +57,7 @@ r.draw_arrays('TRIANGLES')
 r.finish('scene.bmp')
 
 #Spiderman
+print('Añadiendo Spiderman')
 t = Texture('./textures/spiderman.bmp')
 r.active_texture = t
 r.active_shader = simple
@@ -59,4 +66,4 @@ r.load('./models/spiderman-scene.obj', translate=(0.2, 0.3, 0), scale=(0.15,0.15
 r.draw_arrays('TRIANGLES')
 r.finish('scene.bmp')
 
-
+print('Escena terminada')
